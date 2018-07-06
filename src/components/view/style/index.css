@@ -1,0 +1,8 @@
+.markdown-view {
+  background-color: #FFFFFF;
+  padding: 8px;
+  overflow: hidden;
+  width: 100%;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
