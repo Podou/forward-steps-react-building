@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 class Footer extends React.Component {
-
-  render() {
+  public render() {
     return <span>Footer</span>
   }
 }

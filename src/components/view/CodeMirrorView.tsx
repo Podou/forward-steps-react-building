@@ -21,30 +21,30 @@ export interface ICodeViewProps {
 }
 
 class CodeView extends React.Component<ICodeViewProps> {
-  codeMirrorRef: any
+  private codeMirrorRef: any
 
   constructor(props: any) {
     super(props)
     this.codeMirrorRef = React.createRef()
   }
 
-  componentWillMount() {
+  public componentWillMount() {
     this.setState({
       code: this.props.code
     })
   }
 
-  onCodeMirror = (e: any) => {
-    console.log(e)
-  }
+  // public onCodeMirror = (e: any) => {
+  //   console.log(e)
+  // }
 
-  componentWillReceiveProps(nextProps: any) {
+  public componentWillReceiveProps(nextProps: any) {
     const { code } = nextProps
     const editor = this.codeMirrorRef.current.getCodeMirror()
     editor.setValue(code)
   }
 
-  render() {
+  public render() {
     const { code } = this.props
     return (
       <div style={{ border: '1px solid #ccc', fontSize: '14px' }}>

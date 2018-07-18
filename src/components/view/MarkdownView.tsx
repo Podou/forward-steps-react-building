@@ -11,7 +11,7 @@ export interface IMarkdownViewProps {
 
 class MarkdownView extends React.Component<IMarkdownViewProps> {
 
-  render() {
+  public render() {
     const { source, height = 500 } = this.props
     return (
       <div className="markdown-view" style={{ height: `${height}px` }}>

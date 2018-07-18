@@ -2,24 +2,42 @@
   "name": "forward-steps-react-building",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.dev.js --mode development",
+    "start": "react-scripts-ts start",
+    "build": "webpack --config webpack.config.dev.js --mode production",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "react": "^16.4.1",
     "react-codemirror": "^1.0.0",
     "react-dom": "^16.4.1",
     "react-markdown": "^3.3.4",
     "react-scripts-ts": "2.16.0"
   },
-  "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
-  },
   "devDependencies": {
     "@types/jest": "^23.1.4",
     "@types/node": "^10.5.1",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
-    "typescript": "^2.9.2"
+    "awesome-typescript-loader": "^5.2.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "less": "^3.5.3",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^2.1.5",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^4.3.3",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "typescript": "^2.9.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   }
 }
