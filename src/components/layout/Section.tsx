@@ -1,9 +1,21 @@
 import * as React from 'react'
 
-class Section extends React.Component {
+export interface ISectionProps {
+  title: string
+}
+
+// tslint:disable-next-line:no-var-requires
+const styles = require('./styles/index.module.less')
+
+class Section extends React.Component<ISectionProps> {
 
   public render() {
-    return <span>Section</span>
+    const { title } = this.props;
+    return (
+      <section className={styles.section} id={title}>
+        <span>{title}</span>
+      </section>
+    )
   }
 }
 
