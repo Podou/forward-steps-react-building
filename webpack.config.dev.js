@@ -1,9 +1,13 @@
+const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
-const srcPath = path.join(__dirname, 'src')
+// https://github.com/facebookincubator/create-react-app/issues/637
+const appDirectory = fs.realpathSync(process.cwd());
+
+const srcPath = path.join(appDirectory, 'src')
 const publicPath = path.join(__dirname, 'public')
 const distPath = path.join(__dirname, 'dist')
 const scriptPath = path.join(__dirname, 'script')

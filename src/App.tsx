@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 
-import { Container, Header, Section } from './components/layout';
+import { Container, Header, Section } from 'src/components/layout';
 
 class App extends React.Component {
 
